@@ -1,0 +1,191 @@
+[
+  {
+    "timestamp": "2026-06-25T09:41:47.123Z",
+    "type": "mcp_call",
+    "method": "spot_get_ticker",
+    "params": { "symbol": "BTCUSDT" },
+    "response": { "code": 0, "data": { "price": 65359.52, "volume": 221 } },
+    "duration": 122,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:41:50.456Z",
+    "type": "decision",
+    "method": "futures_place_order",
+    "action": "DECREASE_LEVERAGE",
+    "rationale": "链上数据显示大额转账激增，短期波动可能加剧，减仓观望",
+    "confidence": 0.63,
+    "duration": 474,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:41:55.789Z",
+    "type": "mcp_call",
+    "method": "futures_get_ticker",
+    "params": { "symbol": "BTCUSDT" },
+    "response": { "code": 0, "data": { "price": 63960.97, "volume": 418 } },
+    "duration": 126,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:41:59.012Z",
+    "type": "decision",
+    "method": "account_get_balance",
+    "action": "NO_ACTION",
+    "rationale": "宏观经济数据利好风险资产，加密市场联动走强预期",
+    "confidence": 0.57,
+    "duration": 577,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:01.234Z",
+    "type": "decision",
+    "method": "futures_close_position",
+    "action": "CLOSE_POSITION",
+    "rationale": "USDT 永续合约基差收敛至合理区间，持仓量无异常",
+    "confidence": 0.57,
+    "duration": 439,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:05.567Z",
+    "type": "decision",
+    "method": "futures_get_ticker",
+    "action": "OPEN_LONG",
+    "rationale": "市场情绪指数转正，BTC 资金费率正常，适合轻仓介入",
+    "confidence": 0.84,
+    "duration": 203,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:11.890Z",
+    "type": "mcp_call",
+    "method": "account_get_balance",
+    "params": {},
+    "response": { "code": 0, "data": { "price": 69993.47, "volume": 326 } },
+    "duration": 309,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:13.111Z",
+    "type": "mcp_call",
+    "method": "spot_get_ticker",
+    "params": { "symbol": "BTCUSDT" },
+    "response": { "code": 0, "data": { "price": 64087.52, "volume": 966 } },
+    "duration": 114,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:17.234Z",
+    "type": "mcp_call",
+    "method": "account_get_balance",
+    "params": {},
+    "response": { "code": 0, "data": { "price": 63733.05, "volume": 535 } },
+    "duration": 238,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:20.456Z",
+    "type": "mcp_call",
+    "method": "account_get_balance",
+    "params": {},
+    "response": { "code": 0, "data": { "price": 69147.68, "volume": 676 } },
+    "duration": 100,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:24.678Z",
+    "type": "mcp_call",
+    "method": "account_get_balance",
+    "params": {},
+    "response": { "code": -1, "error": "rate limit exceeded" },
+    "duration": 236,
+    "status": "error"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:29.901Z",
+    "type": "decision",
+    "method": "futures_get_position",
+    "action": "ADJUST_STOP_LOSS",
+    "rationale": "波动率溢价偏高，期权市场暗示下方支撑稳固",
+    "confidence": 0.70,
+    "duration": 451,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:33.123Z",
+    "type": "mcp_call",
+    "method": "futures_get_kline",
+    "params": { "symbol": "ETHUSDT", "interval": "5m" },
+    "response": { "code": 0, "data": { "price": 3182.45, "volume": 1523 } },
+    "duration": 98,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:37.456Z",
+    "type": "decision",
+    "method": "spot_place_order",
+    "action": "OPEN_SHORT",
+    "rationale": "ETHUSDT 4 小时 MACD 金叉确认，成交量放大，开多仓",
+    "confidence": 0.72,
+    "duration": 312,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:41.789Z",
+    "type": "mcp_call",
+    "method": "spot_get_depth",
+    "params": { "symbol": "BTCUSDT", "limit": 10 },
+    "response": { "code": 0, "data": { "bids": 1234, "asks": 1156 } },
+    "duration": 145,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:45.012Z",
+    "type": "decision",
+    "method": "futures_get_ticker",
+    "action": "TAKE_PROFIT",
+    "rationale": "BTCUSDT 突破 15 分钟布林带上轨，RSI 超买区域回落，短线做空信号",
+    "confidence": 0.91,
+    "duration": 267,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:48.345Z",
+    "type": "mcp_call",
+    "method": "futures_get_position",
+    "params": { "symbol": "BTCUSDT" },
+    "response": { "code": 0, "data": { "price": 67123.89, "volume": 445 } },
+    "duration": 156,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:52.678Z",
+    "type": "decision",
+    "method": "futures_place_order",
+    "action": "INCREASE_LEVERAGE",
+    "rationale": "短期均线上穿中期均线，K 线形态呈现看涨吞没",
+    "confidence": 0.68,
+    "duration": 389,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:56.901Z",
+    "type": "mcp_call",
+    "method": "spot_get_kline",
+    "params": { "symbol": "BTCUSDT", "interval": "1m" },
+    "response": { "code": 0, "data": { "price": 68456.12, "volume": 890 } },
+    "duration": 88,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-25T09:42:59.234Z",
+    "type": "decision",
+    "method": "futures_get_kline",
+    "action": "CLOSE_POSITION",
+    "rationale": "波动率溢价偏高，期权市场暗示下方支撑稳固",
+    "confidence": 0.75,
+    "duration": 423,
+    "status": "success"
+  }
+]
