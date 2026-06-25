@@ -1,0 +1,30 @@
+{
+  "name": "bitget-agentops-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ws-server": "node server/ws-server.js",
+    "mock-agent": "node server/mock-agent.js",
+    "demo": "concurrently -n ws,app,agent \"npm run ws-server\" \"npm run dev\" \"sleep 3 && npm run mock-agent\""
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "recharts": "^2.12.0",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/ws": "^8.5.0",
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^8.2.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
+  }
+}
